@@ -8,7 +8,7 @@ import { Plugin, PluginConfig, OrcdkConfig, AWSCommandFactory, EventBus, EventTy
  */
 export class SSMCleanupPlugin implements Plugin {
   public readonly name = '@orcdkestrator/orcdk-plugin-ssm-cleanup';
-  public readonly version = '1.0.0';
+  public readonly version = '1.0.1';
   
   private config: PluginConfig | null = null;
   private orcdkConfig: OrcdkConfig | null = null;

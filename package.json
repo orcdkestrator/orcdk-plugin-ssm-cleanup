@@ -1,6 +1,6 @@
 {
   "name": "@orcdkestrator/orcdk-plugin-ssm-cleanup",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SSM parameter cleanup utility plugin for Orcdkestrator",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
