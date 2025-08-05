@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { SSMClient, GetParametersByPathCommand, DeleteParametersCommand } from '@aws-sdk/client-ssm';
 import { Plugin, PluginConfig, OrcdkConfig, AWSCommandFactory, EventBus, EventTypes, OrcdkEvent } from '@orcdkestrator/core';
 import * as fs from 'fs';
