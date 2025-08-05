@@ -1,10 +1,10 @@
-import { SsmCleanupPlugin } from '../index';
+import { SSMCleanupPlugin } from '../index';
 
-describe('SsmCleanupPlugin', () => {
-  let plugin: SsmCleanupPlugin;
+describe('SSMCleanupPlugin', () => {
+  let plugin: SSMCleanupPlugin;
 
   beforeEach(() => {
-    plugin = new SsmCleanupPlugin();
+    plugin = new SSMCleanupPlugin();
   });
 
   it('should have correct name', () => {
