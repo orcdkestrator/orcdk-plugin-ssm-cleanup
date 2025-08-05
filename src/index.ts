@@ -1,20 +1,14 @@
-/* eslint-disable no-console */
+/* eslint-disable no-console, @typescript-eslint/no-explicit-any */
 import { SSMClient, GetParametersByPathCommand, DeleteParametersCommand } from '@aws-sdk/client-ssm';
 import { Plugin, PluginConfig, OrcdkConfig, AWSCommandFactory, EventBus, EventTypes, OrcdkEvent } from '@orcdkestrator/core';
-import * as fs from 'fs';
-import * as path from 'path';
-
-// Read version from package.json
-const packageJsonPath = path.join(__dirname, '../..', 'package.json');
-const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf-8'));
 
 /**
  * SSM cleanup plugin for managing parameter store cleanup after stack destruction
  * Migrated from DeployManager SSMCleanup
  */
 export class SSMCleanupPlugin implements Plugin {
-  public readonly name = '@orcdkestrator/ssm-cleanup';
-  public readonly version = packageJson.version;
+  public readonly name = '@orcdkestrator/orcdk-plugin-ssm-cleanup';
+  public readonly version = '1.0.0';
   
   private config: PluginConfig | null = null;
   private orcdkConfig: OrcdkConfig | null = null;

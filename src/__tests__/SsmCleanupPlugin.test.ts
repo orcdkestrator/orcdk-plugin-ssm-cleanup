@@ -8,7 +8,7 @@ describe('SSMCleanupPlugin', () => {
   });
 
   it('should have correct name', () => {
-    expect(plugin.name).toBe('ssm-cleanup');
+    expect(plugin.name).toBe('@orcdkestrator/orcdk-plugin-ssm-cleanup');
   });
 
   it('should be defined', () => {
