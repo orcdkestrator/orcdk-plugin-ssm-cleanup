@@ -1,25 +1,9 @@
 import { SsmCleanupPlugin } from '../index';
-import { PluginConfig, OrcdkConfig } from '@orcdkestrator/core';
 
 describe('SsmCleanupPlugin', () => {
   let plugin: SsmCleanupPlugin;
-  let mockConfig: PluginConfig;
-  let mockOrcdkConfig: OrcdkConfig;
 
   beforeEach(() => {
-    mockConfig = {
-      name: 'ssm-cleanup',
-      enabled: true,
-      options: {}
-    };
-
-    mockOrcdkConfig = {
-      version: '1.0.0',
-      environments: {},
-      isLocal: true,
-      plugins: []
-    };
-
     plugin = new SsmCleanupPlugin();
   });
 
